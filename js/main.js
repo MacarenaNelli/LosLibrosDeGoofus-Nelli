@@ -1,5 +1,4 @@
 //Clases
-
 class Producto {
     constructor(nombre, precio){
         this.nombre = nombre;
@@ -15,7 +14,7 @@ class Pedido {
     }
 
     agregarProducto(producto) {
-        this.productos.push(producto)
+        this.productos.push(producto);
     }
 
     calcularTotal() {
@@ -33,6 +32,22 @@ class Pedido {
         }
     }
 }
+
+function muestraProductos(productos) {
+    let lproductos = "";
+    for (let i = 0; i < productos.length; i++){
+        lproductos += "- " + productos[i].nombre + "\n";  
+    }
+    alert("Listado de productos:\n" + lproductos);
+}
+
+// Array de productos
+const productos = [
+    new Producto("Libro", 6000),
+    new Producto("Vinilo", 10000),
+    new Producto("CD", 7000),
+    new Producto("Agenda", 5000)
+];
 
 // Pedido de datos
 const nombreUsuario = prompt("¿Cuál es tu nombre?");
@@ -57,49 +72,50 @@ while(formaPago < 1 || formaPago > 3){
     formaPago = prompt("1 - Débito \n 2 - Crédito \n 3 - Efectivo");
 }
 
-
 //Creación de pedido (Objeto)
 const pedido = new Pedido(direccionPedido,formaPago);
-
-
-//Creación de productos (Objetos)
-const libro = new Producto("Libro", 6000);
-const vinilo = new Producto("Vinilo", 10000);
-const cd = new Producto("CD", 7000);
 
 //Agregado de productos al carrito
 let opcion = 0;
 
-while(opcion !== 4){
-    alert("Elegi el producto que quieras:\n 1 - Libro \n 2 - Vinilo\n 3 - CD\n 4 - Salir");
+//Ejecución de la función
+muestraProductos(productos);
+
+while(opcion !== 5){
 
     opcion = parseInt(prompt("Ingrese su opcion: "));
 
     switch (opcion){
         case 1:
-            pedido.agregarProducto(libro);
+            pedido.agregarProducto(productos[0]);
             alert("Agregaste un libro");
             break;
 
         case 2:
-            pedido.agregarProducto(vinilo);
+            pedido.agregarProducto(productos[1]);
             alert("Agregaste un vinilo");
             break;
 
         case 3:
-            pedido.agregarProducto(cd);
+            pedido.agregarProducto(productos[2]);
             alert("Agregaste un cd");
             break;
+
         case 4:
+            pedido.agregarProducto(productos[3]);
+            alert("Agregaste una agenda");
+            break;
+
+        case 5:
             break;
 
         default:
-            alert("Opcion invalida, ingrese de nuevo");
+            alert("Opción inválida, ingrese de nuevo");
             break;
-    }
+        }
 }
 
 console.log(nombreUsuario + " hizo el siguiente pedido: ");
 console.log("Y va a ir a " + direccionPedido);
 pedido.mostrarResumen();
-console.log("Y va a pagar un total de $" + pedido.calcularTotal());
+console.log("Y va a pagar un total de $" + pedido.calcularTotal()); 
