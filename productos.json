@@ -1,0 +1,74 @@
+[
+    {
+        "id": "el-gato-que-amaba-los-libros",
+        "titulo": "El gato que amaba los libros",
+        "imagen": "./images/el-gato-que-amaba-los-libros.png",
+        "autor": "Sōsuke Natsukawa",
+        "precio": 3000
+    },
+
+    {
+        "id": "el-secreto-de-las-flores",
+        "titulo": "El secreto de las flores",
+        "imagen": "./images/el-secreto-de-las-flores.jpg",
+        "autor": "Valérie Perrin",
+        "precio": 3200
+    },
+
+    {
+        "id": "en-el-bosque-oscuro",
+        "titulo": "En el bosque oscuro",
+        "imagen": "./images/en-el-bosque-oscuro.jpg",
+        "autor": "Dale Bailey",
+        "precio": 2500
+    },
+
+    {
+        "id": "el-tiempo-de-las-moscas",
+        "titulo": "El tiempo de las moscas",
+        "imagen": "./images/el-tiempo-de-las-moscas.jpg",
+        "autor": "Claudia Piñeiro",
+        "precio": 3600
+    },
+
+    {
+        "id": "las-huellas-del-mal",
+        "titulo": "Las huellas del mal",
+        "imagen": "./images/las-huellas-del-mal.jpg",
+        "autor": "Federico Andahazi",
+        "precio": 2950
+    },
+
+    {
+        "id": "ensayo-sobre-la-ceguera",
+        "titulo": "Ensayo sobre la ceguera",
+        "imagen": "./images/ensayo-sobre-la-ceguera.jpg",
+        "autor": "José Saramago",
+        "precio": 3300
+    },
+
+    {
+        "id": "los-hijos-de-los-dias",
+        "titulo": "Los hijos de los días",
+        "imagen": "./images/los-hijos-de-los-dias.jpg",
+        "autor": "Eduardo Galeano",
+        "precio": 3500
+    },
+
+    {
+        "id": "nunca-me-abandones",
+        "titulo": "Nunca me abandones",
+        "imagen": "./images/nunca-me-abandones.jpg",
+        "autor": "Kazuo Ishiguro",
+        "precio": 2700
+    },
+
+    {
+        "id": "tan-poca-vida",
+        "titulo": "Tan poca vida",
+        "imagen": "./images/tan-poca-vida.jpg",
+        "autor": "Hanya Yanagihara",
+        "precio": 3200
+    }
+
+]
